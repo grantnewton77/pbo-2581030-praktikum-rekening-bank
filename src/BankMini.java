@@ -48,8 +48,25 @@ public class BankMini {
                     }
                     break;
 
+                case 3:
+                    rekening.cetakInfo();
+                    break;
+
+                case 0:
+                    break;
+
+                default:
+                    System.out.println("Menu tidak dikenal.");
+                    break;
             }
 
         } while (pilihan != 0);
+
+        System.out.println();
+        System.out.println("============ SALDO AKHIR ============");
+
+        rekening.cetakInfo();
+
+        input.close();
     }
 }
